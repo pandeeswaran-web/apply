@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                font-family:sans-serif;
+            }
+           
+            header{
+                background-color: crimson;
+                color: white;
+                width: 100%;
+                height: 50px;
+                text-align: center;
+                line-height:40px;
+            }
+            #box1>*{
+                border:1px solid gray;
+                background-color: none;
+                width: 93.5%;
+                padding: 15px;
+                margin-left:16px;
+                color: gray;
+                font-size: 1em;
+            }
+            #container{
+                border:1px solid gray;
+                background-color: none;
+                width: 96.2%;
+                padding: 14px;
+                margin-left:16px;
+                color: gray;
+                font-size: 1em;
+                position: relative;
+                outline: none;
+                box-shadow:none;
+                
+            }
+            #box2>*{
+                border:1px solid gray;
+                background-color: none;
+                width: 43%;
+                padding: 14px;
+                margin-left:16px;
+                text-align: center;
+                font-size: 1em;
+                display:inline-block;
+            }
+            p{
+                margin-left:17px ;
+            }
+            #file-up{
+                display: none;
+                
+            }
+            #custom-button{
+                background-color:transparent;
+                border: 1px solid crimson;
+                border-radius:5px;
+                color: black;
+                width: 93.5%;
+                padding: 15px;
+                text-align: center;
+                word-spacing:2px;
+                font-family:sans-serif;
+                margin-left: 16px;
+                display: block;
+            
+            }
+            button{
+                background-color: crimson;
+                color:white;
+                width: 96.5%;
+                height: 50px;
+                border-radius:5px;
+                text-align: center;
+                line-height:40px;
+                margin-left: 16px;
+                font-family:sans-serif;
+                font-size: 1em;
+            }
+            button:hover{
+                background-color:rgb(248, 52, 91);
+            }
+            #resume{
+                font-family:sans-serif;
+            }
+            @media screen and (max-width:600px){
+                #box1>*{
+                    width:84%;
+                    margin-left:15px;
+                    
+                }
+                #container
+                {
+                    width:91.2%;
+                    margin-left:15px;
+                    
+                }
+                #box2>*{
+                     width:29.5%; 
+                     margin-left:15px;
+                     font:0.5em;
+                }
+
+                #custom-button{
+                    width:83.5%;
+                    margin-left:15px;
+                }
+                button{
+                    width:88%;
+                    margin-left:22.5px;
+                }
+                }
+                
+            }
+            
+        </style>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        <body>
+            <header>Quick Apply</header><br><br>
+            <form>
+        <div id="box1">
+            <input type="email" placeholder="Enter your email" id="email"><br><br><br>
+        </div>
+            <select id="container">
+                <option value="Select">Select</option>
+                <option value="IT-software Application">IT-software Application</option>
+            </select><br><br><br>
+            <select id="container">
+                <option value="Select">Select</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+            </select><br><br><br>
+
+        <div id="box2">
+            <input type="text/number" id="years"  placeholder="Experience(Years)"><input type="text/number" id="month" placeholder="Experience(Months)">
+            <br><br><br>
+        </div> 
+        <div id="boxfile">
+            <input type="file" id="file-up">
+            <label for="file-up" id="custom-button"><i class="fa fa-upload" id="icon"><span id="resume">Upload Resume</span></i></label><br>
+            
+        </div>
+            <p>Only Word,text,RTF,HTML,pdf of file upto 1MB are allowed</p><br>
+
+        <div id="submit">
+        <button name="CONTINUE" value="continue" id="Continue">CONTINUE</button><br><br><br>
+        </div>
+
+        </form>
+        </body>
+    
+</html>
